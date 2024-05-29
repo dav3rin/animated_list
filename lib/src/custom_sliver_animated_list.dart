@@ -3,6 +3,13 @@ import 'package:flutter/material.dart';
 
 const Duration _kDuration = Duration(milliseconds: 300);
 
+typedef AnimatedListItemBuilder = Widget Function(
+    BuildContext context, int index, Animation<double> animation);
+
+typedef AnimatedListRemovedItemBuilder = Widget Function(
+    BuildContext context, Animation<double> animation);
+
+
 class CustomSliverAnimatedList extends StatefulWidget {
   /// Creates a sliver that animates items when they are inserted or removed.
   const CustomSliverAnimatedList({
