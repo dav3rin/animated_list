@@ -20,6 +20,7 @@ analyzer:
     implicit-dynamic: false
 
   errors:
+    lines_longer_than_80_chars: ignore
     missing_required_param: warning
     missing_return: warning
 

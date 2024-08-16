@@ -1,3 +1,5 @@
+// ignore_for_file: lines_longer_than_80_chars
+
 import 'dart:async';
 
 import 'package:animated_list/src/custom_sliver_animated_list.dart';
@@ -175,7 +177,7 @@ abstract class ImplicitlyAnimatedListBaseState<W extends Widget,
     _newItems = List<E>.from(widget.items);
     _oldItems = List<E>.from(data);
 
-    _calcDiffs();
+    await _calcDiffs();
   }
 
   Future<void> _calcDiffs() async {
@@ -200,7 +202,7 @@ abstract class ImplicitlyAnimatedListBaseState<W extends Widget,
       _diffOperation?.then((diffs) {
         // diffs is null when the operation
         // gets canceled.
-        if (diffs == null || !mounted) {
+        if (!mounted) {
           return;
         }
 

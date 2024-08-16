@@ -1,3 +1,5 @@
+// ignore_for_file: lines_longer_than_80_chars
+
 typedef ItemDiffUtil<E> = bool Function(E oldItem, E newItem);
 
 /// A Callback class used by DiffUtil while calculating the diff between two lists.

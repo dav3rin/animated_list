@@ -1,7 +1,8 @@
 import 'package:animated_list/src/src.dart';
 import 'package:flutter/foundation.dart';
 
-// This implementation of the MyersDiff algorithm was originally written by David Bota
+// This implementation of the MyersDiff algorithm was originally written
+// by David Bota
 // over here https://gitlab.com/otsoaUnLoco/animated-stream-list.
 
 class _DiffArguments<E> {

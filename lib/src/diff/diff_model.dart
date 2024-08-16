@@ -42,6 +42,7 @@ class Modification<E> extends Diff {
 
   @override
   String toString() {
+    // ignore: lines_longer_than_80_chars
     return '${runtimeType.toString()}(index: $index, size: $size, items: $items)';
   }
 }
