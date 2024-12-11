@@ -99,6 +99,7 @@ class ReorderableState extends State<Reorderable>
   void _registerItem() {
     final list = ImplicitlyAnimatedReorderableList.of(context)!;
 
+    // ignore: cascade_invocations
     list.registerItem(this);
     _dragController.duration = list.widget.settleDuration;
 

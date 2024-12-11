@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 /// A transition that fades the `child` in or out before shrinking or expanding
 /// to the `childs` size along the `axis`.
 ///
-/// This can be used as a item transition in an [ImplicitlyAnimatedReorderableList].
 class SizeFadeTransition extends StatefulWidget {
   const SizeFadeTransition({
     Key? key,

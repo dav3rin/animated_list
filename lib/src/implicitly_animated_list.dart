@@ -185,10 +185,7 @@ class SliverImplicitlyAnimatedList<E extends Object>
   /// represent the same item. For example, if your items have unique ids, this method should
   /// check their id equality.
   ///
-  /// The [onReorderFinished] callback is called in response to when the dragged item has
-  /// been released and animated to its final destination. Here you should update
-  /// the underlying data in your model/bloc/database etc.
-  ///
+
   /// The [spawnIsolate] flag indicates whether to spawn a new isolate on which to
   /// calculate the diff between the lists. Usually you wont have to specify this
   /// value as the MyersDiff implementation will use its own metrics to decide, whether

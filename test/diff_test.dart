@@ -10,6 +10,7 @@ void main() {
     // If you uncomment this, everything will work as expected.
     // final newItems = List.from(oldItems);
     final newItems = List.generate(10, (index) => _Model(index.toString()));
+    // ignore: cascade_invocations
     newItems.removeAt(1);
 
     // act

@@ -230,6 +230,7 @@ class ImplicitlyAnimatedReorderableListState<E extends Object>
 
   ScrollController? get scrollController => _controller;
 
+  // ignore: library_private_types_in_public_api
   _Item? dragItem;
   Widget? _dragWidget;
   VoidCallback? _onDragEnd;
@@ -548,6 +549,7 @@ class ImplicitlyAnimatedReorderableListState<E extends Object>
     setState(() => _inDrag = false);
   }
 
+  // ignore: library_private_types_in_public_api
   _Item? findDropTargetItem() {
     var target = dragItem;
 
@@ -575,6 +577,7 @@ class ImplicitlyAnimatedReorderableListState<E extends Object>
     return target;
   }
 
+  // ignore: library_private_types_in_public_api
   void avoidConflictingMoves(_Item? target) {
     _itemTranslations.forEach((key, controller) {
       final item = _itemBoxes[key];
